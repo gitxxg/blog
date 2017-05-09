@@ -58,3 +58,9 @@ keystoreFile:服务器证书文件路径
 keystorePass:服务器证书密码
 truststoreFile:用来验证客户端证书的根证书，此例中就是服务器证书
 truststorePass:根证书密码
+
+### 2、导入客户端证书
+双击client.p12,然后一直下一步，导入证书到《个人》
+### 3、导入客户端证书
+双击clientKey.cer,然后一直下一步，导入证书到《受信任的根证书颁发机构》
+### 4、浏览器 https://localhost:8443/
