@@ -2,14 +2,15 @@
 
 
 ## lua：
-lua安装: yum install lua
+lua安装: yum install lua 
 
 lua包管理工具安装: yum install -y luarocks 
 
 lua-resty-jwt安装: luarocks install lua-resty-jwt
 
-KONG的使用基本和NGINX如出一辙。默认的工作目录是/usr/local/kong，默认的配置文件是/etc/kong/kong.yml。如果需要工作在1024以下的端口，则要求root权限   
-KONG的启动命令很简单，就是kong start  
+KONG的使用基本和NGINX如出一辙。默认的工作目录是/usr/local/kong，默认的配置文件是/etc/kong/kong.yml。
+如果需要工作在1024以下的端口，则要求root权限。 
+KONG的启动命令很简单，就是kong start
 但是启动之前需要编辑配置文件。
 需要关注的主要是几个点：
 发送匿名统计报告，（默认打开，一定要关闭）
