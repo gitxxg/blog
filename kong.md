@@ -6,6 +6,20 @@ lua安装: yum install lua
 
 lua包管理工具安装: yum install -y luarocks 
 
+```
+tar -zxvf luarocks-2.1.0.tar.gz
+
+cd luarocks-2.1.0
+
+./configure --prefix=/usr/local/luarocks
+
+make build
+
+make install
+
+OK了,luarock的可执行文件被安装到了 /usr/local/luarocks/bin/luarocks.
+```
+
 lua-resty-jwt安装: luarocks install lua-resty-jwt
 
 KONG的使用基本和NGINX如出一辙。默认的工作目录是/usr/local/kong，默认的配置文件是/etc/kong/kong.yml。
