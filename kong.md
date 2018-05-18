@@ -9,8 +9,18 @@ KONG的启动命令很简单，就是kong start
 后端数据库的配置，（默认Cassandra，建议Postgres）  
 内存缓存大小配置，（默认128M，建议1G）  
 出口端口（默认HTTP 8000，HTTPS 8443，建议直接改成80和443）  
-管理端口（默认8001，我改成8888比较吉利）  
+管理端口（默认8001）  
 配置好之后，启动KONG即可。  
+
+```
+openssl 版本 1.0.1e （系统自带版本）
+openresty  版本 1.13.6.1 （官方最新）
+kong 版本 0.11.1
+lua 版本 5.1.5 （小于5.2）
+luarocks 版本 2.4.3
+```
+kong 官方安装:
+https://getkong.org/install/source/?_ga=2.29052732.182745025.1526269053-1073891235.1524037424
 
 ## lua：
 - lua安装: yum install lua 
